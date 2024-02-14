@@ -1,0 +1,93 @@
+[{
+  "_id": {
+    "$oid": "65c640b912f699d798dbb190"
+  },
+  "username": "123",
+  "password": "123",
+  "securityQuestion": "123",
+  "securityAnswer": "123",
+  "firstName": "1223",
+  "lastName": "13214",
+  "gender": "M",
+  "address": "231231",
+  "contactPhone": "1243341",
+  "email": "34242342",
+  "schoolType": "Gimnazija",
+  "currentGrade": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c6450e2e35e3460846a926"
+  },
+  "username": "1231",
+  "password": "123",
+  "securityQuestion": "123",
+  "securityAnswer": "123",
+  "firstName": "1223",
+  "lastName": "13214",
+  "gender": "M",
+  "address": "231231",
+  "contactPhone": "1243341",
+  "email": "3424234223",
+  "schoolType": "Gimnazija",
+  "currentGrade": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c64760fca0b661a825851a"
+  },
+  "username": "1233",
+  "password": "123",
+  "securityQuestion": "123",
+  "securityAnswer": "123",
+  "firstName": "12341",
+  "lastName": "342",
+  "gender": "M",
+  "address": "234",
+  "contactPhone": "4231",
+  "email": "2314",
+  "profileImage": "photo_2023-10-13_18-08-06 edit.jpg",
+  "schoolType": "Gimnazija",
+  "currentGrade": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65cb9eeccdbf4c0e22f811e8"
+  },
+  "username": "urke",
+  "password": "urke123",
+  "securityQuestion": "Devojacko prezime majke?",
+  "securityAnswer": "Erakovic",
+  "firstName": "Uros",
+  "lastName": "Milenkovic",
+  "gender": "M",
+  "address": "Dimitrija Koturovica 25",
+  "contactPhone": "065 3586735",
+  "email": "tuljenator@gmail.com",
+  "profileImage": "photo_2023-10-13_18-08-06 edit.jpg",
+  "schoolType": "Srednja-Umetnicka",
+  "currentGrade": 4,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65cc937abca847f9df4d262f"
+  },
+  "username": "mare",
+  "password": "Mare123!",
+  "securityQuestion": "mare",
+  "securityAnswer": "mare",
+  "firstName": "mare",
+  "lastName": "mare",
+  "gender": "M",
+  "address": "mare",
+  "contactPhone": "011 1111 111",
+  "email": "mare",
+  "profileImage": "aV2LvEiqPR9Sv5yiE5mMc0WRX2qDVOYMXyIvFr0f.jpg",
+  "schoolType": "Gimnazija",
+  "currentGrade": 3,
+  "__v": 0
+}]

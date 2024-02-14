@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "65cca102c3ce5aca661ca850"
+  },
+  "username": "dare",
+  "password": "$2b$04$59Sp7i51zgMpwUBfV3DF.OnXr2x356WEm8oUfZ4hPtpb7JuJUA7jS",
+  "securityQuestion": "dare",
+  "securityAnswer": "dare",
+  "firstName": "dare",
+  "lastName": "dare",
+  "gender": "M",
+  "address": "dare",
+  "contactPhone": "011 1111 112",
+  "email": "dare",
+  "profileImage": "aV2LvEiqPR9Sv5yiE5mMc0WRX2qDVOYMXyIvFr0f.jpg",
+  "wantedSubjects": [
+    "Matematika",
+    "Nemački jezik"
+  ],
+  "wantedClass": [
+    "Osnovna Skola 1-4",
+    "Osnovna Skola 5-8"
+  ],
+  "freeText": "123",
+  "CV": "PIA_2023_02_13_feb.pdf",
+  "status": 0,
+  "__v": 0
+}]

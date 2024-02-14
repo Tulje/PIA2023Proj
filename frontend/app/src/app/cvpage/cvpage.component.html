@@ -1,0 +1,68 @@
+<p>cvpage works!</p>
+CV:<input type="file" value="CV"  id="" (change)="onFileSelected($event)"><br><br>
+Sta zelite da predajete (multiple choice)
+<br><br>
+<div>
+<input type="checkbox" id="matematika" [(ngModel)]="matematika" value="Matematika">
+<label for="matematika">Matematika</label><br>
+
+<input type="checkbox" id="fizika" [(ngModel)]="fizika" value="Fizika">
+<label for="fizika">Fizika</label><br>
+
+<input type="checkbox" id="hemija" [(ngModel)]="hemija" value="Hemija">
+<label for="hemija">Hemija</label><br>
+
+<input type="checkbox" id="informatika" [(ngModel)]="informatika" value="Informatika">
+<label for="informatika">Informatika</label><br>
+
+<input type="checkbox" id="programiranje" [(ngModel)]="programiranje" value="Programiranje">
+<label for="programiranje">Programiranje</label><br>
+
+<input type="checkbox" id="srpski" [(ngModel)]="srpski" value="Srpski jezik i književnost">
+<label for="srpski">Srpski jezik i književnost</label><br>
+
+<input type="checkbox" id="engleski" [(ngModel)]="engleski" value="Engleski jezik">
+<label for="engleski">Engleski jezik</label><br>
+
+<input type="checkbox" id="nemacki" [(ngModel)]="nemacki" value="Nemački jezik">
+<label for="nemacki">Nemački jezik</label><br>
+
+<input type="checkbox" id="italijanski" [(ngModel)]="italijanski" value="Italijanski jezik">
+<label for="italijanski">Italijanski jezik</label><br>
+
+<input type="checkbox" id="francuski" [(ngModel)]="francuski" value="Francuski jezik">
+<label for="francuski">Francuski jezik</label><br>
+
+<input type="checkbox" id="spanski" [(ngModel)]="spanski" value="Španski jezik">
+<label for="spanski">Španski jezik</label><br>
+
+<input type="checkbox" id="latinski" [(ngModel)]="latinski" value="Latinski jezik">
+<label for="latinski">Latinski jezik</label><br>
+
+<input type="checkbox" id="biologija" [(ngModel)]="biologija" value="Biologija">
+<label for="biologija">Biologija</label><br>
+
+<input type="checkbox" id="istorija" [(ngModel)]="istorija" value="Istorija">
+<label for="istorija">Istorija</label><br>
+
+<input type="checkbox" id="geografija" [(ngModel)]="geografija" value="Geografija">
+<label for="geografija">Geografija</label><br>
+
+<input type="checkbox" id="svet" [(ngModel)]="svet" value="Svet oko nas">
+<label for="svet">Svet oko nas</label><br>
+<input type="text" name="ostalo"  [(ngModel)]="drugi" id="" placeholder="drugi predmet (unesite njegovo ime)"><br>
+<br>
+Za koji uzrast biste predavali izabrane predmete? (multiple choice) <br><br>
+<input type="checkbox" id="os14" [(ngModel)]="os14" value="os14">
+<label for="os14">Osnovna skola 1-4</label><br>
+
+<input type="checkbox" id="os58" [(ngModel)]="os58" value="os58">
+<label for="os58">Osnovna skola 5-8</label><br>
+
+<input type="checkbox" id="ss" [(ngModel)]="ss" value="ss">
+<label for="ss">Srednja skola</label><br>
+</div>
+
+<br>
+<textarea name="" placeholder="Gde ste culi za nas?" [(ngModel)]="tekst" id="" cols="30" rows="10"></textarea><br>
+<button (click)="klik()">click</button>

@@ -1,0 +1,67 @@
+<p>register works!</p>
+<button (click)="teacher()">You want to be a teacher?</button>
+<table>
+    <tr>
+        <td>username:</td>
+        <td><input type="text" [(ngModel)]="formData.username" name="" id="" required></td>
+    </tr>
+    <tr>
+        <td>password:</td>
+        <td><input type="text" name="" id="" [(ngModel)]="formData.password" required></td>
+    </tr>
+    <tr>
+        <td>Security question:</td>
+        <td><input type="text" name="" id="" [(ngModel)]="formData.securityQuestion" required></td>
+    </tr>
+    <tr>
+        <td>Security question's answer:</td>
+        <td><input type="text" name="" id="" [(ngModel)]="formData.securityAnswer" required></td>
+    </tr>
+    <tr><input type="radio" name="gender" id="" value="M"  [(ngModel)]="formData.gender" required>Male <input type="radio" name="gender" value="Z" id="" [(ngModel)]="formData.gender" required> Female</tr>
+    <tr>
+        <td>firstname:</td>
+        <td><input type="text" [(ngModel)]="formData.firstName" name="" id="" required></td>
+    </tr>
+    <tr>
+        <td>lastname:</td>
+        <td><input type="text" name="" id="" [(ngModel)]="formData.lastName" required></td>
+    </tr>
+    <tr>
+        <td>adress:</td>
+        <td><input type="text" name="" id=""[(ngModel)]="formData.address" required></td>
+    </tr>
+    <tr>
+        <td>Image:</td>
+        <td><input type="file" name="" id="" (change)="onFileSelected($event)"></td>
+    </tr>
+    <tr>
+        <td>phone:</td>
+        <td><input type="text" name="" id="" [(ngModel)]="formData.contactPhone" required></td>
+    </tr>
+    <img [src]="formData.profileImage" alt="">
+    <tr>
+        <td>E-mail:</td>
+        <td><input type="text" name="" id="" [(ngModel)]="formData.email" required></td>
+    </tr>
+    <tr>
+        <td>School type:</td>
+        <td>
+            <select [(ngModel)]="formData.schoolType" (change)="provera()" required>
+                <option value="" disabled selected>Select school type</option>
+                <option value="Osnovna" >Osnovna</option>
+                <option value="Gimnazija" >Gimnazija</option>
+                <option value="Srednja-Strucna" >Srednja-Strucna</option>
+                <option value="Srednja-Umetnicka">Srednja-Umetnicka</option>
+            </select></td>
+    </tr>
+    <tr>
+        <td>School year:</td>
+        <td>
+            <select [(ngModel)]="formData.currentGrade" name="" id=""  required>
+                <option value="" disabled selected>Select school year</option>
+                <option *ngFor="let item of Lista" [value]='item'> {{item}}</option>
+            </select>
+        </td>
+    </tr>
+    <tr><button (click)="reg()">register</button></tr>
+</table>
