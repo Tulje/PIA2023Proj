@@ -1,0 +1,30 @@
+<p>index works!</p>
+<h1>    Dobrodosli </h1>
+
+<button [routerLink]="['login']">login</button>
+
+<table>
+    <tr>
+        <td>Br ucenika</td>
+        <td>Br nastavnika</td>
+    </tr>
+    <tr>
+        <td>{{bru}}</td>
+        <td>{{brn}}</td>
+    </tr>
+</table>
+<table *ngFor="let item of predmeti"><tr><th>{{item}}</th></tr>
+<tr *ngFor="let a of nastavnici" ><td *ngIf="a.wantedSubjects==item">{{a.firstName}}</td> <td *ngIf="a.wantedSubjects==item"> {{a.lastName}} </td></tr></table>
+
+<table style="padding: 5px;"><tr><th><button (click)="search()">po imenu</button></th><th><button (click)="search1()">po prezimenu</button></th><th><button (click)="search2()">po predmetu</button></th></tr>
+<tr *ngFor="let a of nastavnici"><td>{{a.firstName}}</td> <td> {{a.lastName}} </td><td>{{a.wantedSubjects}}</td></tr>
+</table>
+
+<input type="text" name="" [(ngModel)]="ime" id="" placeholder="ime nastavnika"><br>
+<input type="text" name="" [(ngModel)]="prezime"id="" placeholder="prezime nastavnika"><br>
+<input type="text" name="" [(ngModel)]="predmet" id="" placeholder="predmet"><br>
+<button (click)="pretraga()">pretrazi</button>
+<table>
+<tr *ngFor="let a of pretrazeno"><td>{{a.firstName}}</td> <td> {{a.lastName}} </td><td>{{a.wantedSubjects}}</td></tr>
+
+</table>

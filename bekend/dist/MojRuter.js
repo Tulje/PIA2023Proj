@@ -12,4 +12,6 @@ MojRuter.route('/login').post((req, res) => new MojKontroler_1.MojKontroler().lo
 MojRuter.route('/loginTeacher').post((req, res) => new MojKontroler_1.MojKontroler().loginT(req, res));
 MojRuter.route('/register').post((req, res) => new MojKontroler_1.MojKontroler().Register(req, res));
 MojRuter.route('/registerTeacher').post((req, res) => new MojKontroler_1.MojKontroler().RegisterT(req, res));
+MojRuter.route('/teachers').post((req, res) => new MojKontroler_1.MojKontroler().teachers(req, res));
+MojRuter.route('/students').post((req, res) => new MojKontroler_1.MojKontroler().students(req, res));
 exports.default = MojRuter;

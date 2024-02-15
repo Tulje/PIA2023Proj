@@ -18,5 +18,14 @@ export class UserService {
   registerTeacher(data:any){
     return this.http.post<any>(`${this.apiUrl}/registerTeacher`, data);
   }
+  teachers(){
+    return this.http.post<any>(`${this.apiUrl}/teachers`, {});
+  }
+  students(){
+    return this.http.post<any>(`${this.apiUrl}/students`, {});
+  }
+  pretragaTeachera(data:any){
+    return this.http.post<any>(`${this.apiUrl}/pretragaTeachera`, data);
+  }
   }
 

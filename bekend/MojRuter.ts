@@ -16,4 +16,13 @@ MojRuter.route('/register').post(
 MojRuter.route('/registerTeacher').post(
     (req,res)=>new MojKontroler().RegisterT(req,res)
 )
+MojRuter.route('/teachers').post(
+    (req,res)=>new MojKontroler().teachers(req,res)
+)
+MojRuter.route('/students').post(
+    (req,res)=>new MojKontroler().students(req,res)
+)
+MojRuter.route('/pretragaTeachera').post(
+    (req,res)=>new MojKontroler().pretragaTeachera(req,res)
+)
 export default MojRuter;

@@ -8,7 +8,8 @@ import { RegisterComponent } from './register/register.component';
 import { FormsModule } from '@angular/forms';
 import{ HttpClientModule} from '@angular/common/http';
 import { TeacherRegisterComponent } from './teacher-register/teacher-register.component';
-import { CVpageComponent } from './cvpage/cvpage.component'
+import { CVpageComponent } from './cvpage/cvpage.component';
+import { IndexComponent } from './index/index.component'
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CVpageComponent } from './cvpage/cvpage.component'
     LoginComponent,
     RegisterComponent,
     TeacherRegisterComponent,
-    CVpageComponent
+    CVpageComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,

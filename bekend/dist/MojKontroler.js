@@ -119,6 +119,12 @@ class MojKontroler {
                 console.log(err);
             });
         };
+        this.teachers = (req, res) => {
+            teacher_1.default.find({}).then(data => res.json(data));
+        };
+        this.students = (req, res) => {
+            student_1.default.find({}).then(data => res.json(data));
+        };
         // Orders = (req:express.Request,res:express.Response)=>{
         //    // let username=req.body.username
         //    // let password = req.body.password

@@ -138,6 +138,16 @@ export class MojKontroler{
         .catch((err)=>{console.log(err)
         })
     }
+    teachers = (req:express.Request,res:express.Response)=>{
+        Teacher.find({}).then(data=>res.json(data))
+    }
+    students = (req:express.Request,res:express.Response)=>{
+        Student.find({}).then(data=>res.json(data))
+
+    }
+    pretragaTeachera = (req:express.Request,res:express.Response)=>{
+        Teacher.find({}).then(data=>res.json(data))
+    }
     // Orders = (req:express.Request,res:express.Response)=>{
     //    // let username=req.body.username
     //    // let password = req.body.password
