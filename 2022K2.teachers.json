@@ -25,4 +25,79 @@
   "CV": "PIA_2023_02_13_feb.pdf",
   "status": 0,
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ce44437489a75e115dbfd8"
+  },
+  "username": "mare",
+  "password": "$2b$04$6E8YQG8t9FN3xgWt1C8TU.Py63NNuaPJ08IJZGAQNAx3MUWuBcfpq",
+  "securityQuestion": "mare",
+  "securityAnswer": "mare",
+  "firstName": "mare",
+  "lastName": "mare",
+  "gender": "M",
+  "address": "mare",
+  "contactPhone": "011 1111 113",
+  "email": "mare@mare.mare",
+  "profileImage": "IOAP4.png",
+  "wantedSubjects": [
+    "Hemija",
+    "Nemački jezik",
+    "Biologija",
+    "Svet oko nas"
+  ],
+  "wantedClass": [
+    "Srednja Skola",
+    "Osnovna Skola 1-4",
+    "Osnovna Skola 5-8"
+  ],
+  "freeText": "nisam",
+  "CV": "UROS CV.pdf",
+  "status": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ce4f4a7489a75e115dc04b"
+  },
+  "username": "ana",
+  "password": "$2b$04$4EYmrMpTFKZrG/ZEiyeK5.xfC.FJBYf3VcDVjJOOqmU4cqMC8EI5K",
+  "securityQuestion": "ana",
+  "securityAnswer": "ana",
+  "firstName": "ana",
+  "lastName": "ana",
+  "gender": "F",
+  "address": "ana",
+  "contactPhone": "011 1111 115",
+  "email": "ana",
+  "profileImage": "aV2LvEiqPR9Sv5yiE5mMc0WRX2qDVOYMXyIvFr0f.jpg",
+  "wantedSubjects": [
+    "Astronomija",
+    "Matematika",
+    "Fizika",
+    "Hemija",
+    "Informatika",
+    "Programiranje",
+    "Srpski jezik i književnost",
+    "Engleski jezik",
+    "Nemački jezik",
+    "Italijanski jezik",
+    "Francuski jezik",
+    "Španski jezik",
+    "Latinski jezik",
+    "Biologija",
+    "Istorija",
+    "Geografija",
+    "Svet oko nas"
+  ],
+  "wantedClass": [
+    "Srednja Skola",
+    "Osnovna Skola 1-4",
+    "Osnovna Skola 5-8"
+  ],
+  "freeText": "U vestima",
+  "CV": "UROS CV.pdf",
+  "status": 0,
+  "__v": 0
 }]
