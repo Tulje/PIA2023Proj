@@ -105,7 +105,7 @@ class MojKontroler {
     constructor() {
         this.login = (req, res) => {
             let username = req.body.username;
-            let password = req.body.password;
+            let password = bcrypt_1.default.hash(req.body.password, 1);
             student_1.default.findOne({ username: username, password: password }).then((data) => res.json(data))
                 .catch((err) => {
                 console.log(err);
@@ -113,7 +113,7 @@ class MojKontroler {
         };
         this.loginT = (req, res) => {
             let username = req.body.username;
-            let password = req.body.password;
+            let password = bcrypt_1.default.hash(req.body.password, 1);
             student_1.default.findOne({ username: username, password: password }).then((data) => res.json(data))
                 .catch((err) => {
                 console.log(err);
@@ -124,6 +124,9 @@ class MojKontroler {
         };
         this.students = (req, res) => {
             student_1.default.find({}).then(data => res.json(data));
+        };
+        this.pretragaTeachera = (req, res) => {
+            teacher_1.default.find({}).then(data => res.json(data));
         };
         // Orders = (req:express.Request,res:express.Response)=>{
         //    // let username=req.body.username

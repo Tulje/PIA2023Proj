@@ -8,6 +8,7 @@ const cors_1 = __importDefault(require("cors"));
 const mongoose_1 = __importDefault(require("mongoose"));
 const multer_1 = __importDefault(require("multer"));
 const MojRuter_1 = __importDefault(require("./MojRuter"));
+const path_1 = __importDefault(require("path"));
 const app = (0, express_1.default)();
 app.use((0, cors_1.default)());
 app.use(express_1.default.json());
@@ -41,6 +42,12 @@ app.post('/users/upload1', upload.single('file'), (req, res, next) => {
         res.send(file);
         a = file.originalname;
     }
+});
+app.get('/users/uploads/:filename', (req, res) => {
+    let filename = req.params.filename;
+    let imgPath = path_1.default.join(__dirname, '../../bekend/uploads', filename);
+    console.log(imgPath);
+    res.sendFile(imgPath);
 });
 const router = express_1.default.Router();
 router.use('/users', MojRuter_1.default);

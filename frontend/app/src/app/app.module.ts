@@ -9,7 +9,8 @@ import { FormsModule } from '@angular/forms';
 import{ HttpClientModule} from '@angular/common/http';
 import { TeacherRegisterComponent } from './teacher-register/teacher-register.component';
 import { CVpageComponent } from './cvpage/cvpage.component';
-import { IndexComponent } from './index/index.component'
+import { IndexComponent } from './index/index.component';
+import { StudentComponent } from './student/student.component'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { IndexComponent } from './index/index.component'
     RegisterComponent,
     TeacherRegisterComponent,
     CVpageComponent,
-    IndexComponent
+    IndexComponent,
+    StudentComponent
   ],
   imports: [
     BrowserModule,

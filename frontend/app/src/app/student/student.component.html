@@ -1,0 +1,46 @@
+<h1>User Profile</h1>
+<form>
+  <label for="userId">User ID:</label>
+  <input type="number" id="userId" name="userId" [(ngModel)]="user.userId" disabled><br>
+
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" [(ngModel)]="user.username"><br>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" [(ngModel)]="user.password"><br>
+
+  <label for="securityQuestion">Security Question:</label>
+  <input type="text" id="securityQuestion" name="securityQuestion" [(ngModel)]="user.securityQuestion"><br>
+
+  <label for="securityAnswer">Security Answer:</label>
+  <input type="text" id="securityAnswer" name="securityAnswer" [(ngModel)]="user.securityAnswer"><br>
+
+  <label for="firstName">First Name:</label>
+  <input type="text" id="firstName" name="firstName" [(ngModel)]="user.firstName"><br>
+
+  <label for="lastName">Last Name:</label>
+  <input type="text" id="lastName" name="lastName" [(ngModel)]="user.lastName"><br>
+
+  <label for="gender">Gender:</label>
+  <input type="text" id="gender" name="gender" [(ngModel)]="user.gender"><br>
+
+  <label for="address">Address:</label>
+  <input type="text" id="address" name="address" [(ngModel)]="user.address"><br>
+
+  <label for="contactPhone">Contact Phone:</label>
+  <input type="text" id="contactPhone" name="contactPhone" [(ngModel)]="user.contactPhone"><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" [(ngModel)]="user.email"><br>
+
+  <label for="profileImage">Profile Image:</label>
+  <input type="text" id="profileImage" name="profileImage" [(ngModel)]="user.profileImage"><br>
+    <img [src]='slika'alt="">
+  <label for="schoolType">School Type:</label>
+  <input type="text" id="schoolType" name="schoolType" [(ngModel)]="user.schoolType"><br>
+
+  <label for="currentGrade">Current Grade:</label>
+  <input type="number" id="currentGrade" name="currentGrade" [(ngModel)]="user.currentGrade"><br>
+
+  <button type="submit">Save</button>
+</form>

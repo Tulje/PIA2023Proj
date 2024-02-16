@@ -18,6 +18,8 @@ export class LoginComponent {
   }
   login(){
     this.servis.login(this.username,this.password).subscribe(response=>{if(response!=null){
+      localStorage.setItem('login',JSON.stringify(response))
+      this.ruter.navigate(['student'])
 
     }
      

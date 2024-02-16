@@ -3,7 +3,7 @@ import cors from 'cors'
 import mongoose from 'mongoose'
 import multer from 'multer';
 import MojRuter from './MojRuter';
-
+import path from 'path'
 const app = express();
 
 app.use(cors())
@@ -42,6 +42,17 @@ app.post('/users/upload1', upload.single('file'), (req, res, next) => {
     res.send(file);
     a=file.originalname
   }
+})
+app.get('/users/uploads/:filename', (req,res)=>{
+
+  let filename= req.params.filename
+  let imgPath=path.join(__dirname,'../../bekend/uploads',filename)
+
+  console.log(imgPath)
+
+  res.sendFile(imgPath)
+
+
 })
 const router = express.Router()
 router.use('/users', MojRuter)

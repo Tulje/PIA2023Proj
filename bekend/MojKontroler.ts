@@ -122,7 +122,7 @@ async function createTeacher(data:any): Promise<ITeacher | null> {
 export class MojKontroler{
     login = (req:express.Request,res:express.Response)=>{
         let username=req.body.username
-        let password = req.body.password
+        let password = bcrypt.hash(req.body.password,1)
         Student.findOne({username:username,password:password}).then(
             (data)=> res.json(data)
         )
@@ -131,7 +131,8 @@ export class MojKontroler{
     }
     loginT = (req:express.Request,res:express.Response)=>{
         let username=req.body.username
-        let password = req.body.password
+        let password = bcrypt.hash(req.body.password,1)
+
         Student.findOne({username:username,password:password}).then(
             (data)=> res.json(data)
         )

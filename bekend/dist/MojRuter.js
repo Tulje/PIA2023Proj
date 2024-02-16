@@ -14,4 +14,5 @@ MojRuter.route('/register').post((req, res) => new MojKontroler_1.MojKontroler()
 MojRuter.route('/registerTeacher').post((req, res) => new MojKontroler_1.MojKontroler().RegisterT(req, res));
 MojRuter.route('/teachers').post((req, res) => new MojKontroler_1.MojKontroler().teachers(req, res));
 MojRuter.route('/students').post((req, res) => new MojKontroler_1.MojKontroler().students(req, res));
+MojRuter.route('/pretragaTeachera').post((req, res) => new MojKontroler_1.MojKontroler().pretragaTeachera(req, res));
 exports.default = MojRuter;
