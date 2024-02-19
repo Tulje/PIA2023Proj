@@ -1,8 +1,13 @@
-<p>cvpage works!</p>
+<div style="text-align: center;"><h1>Teacher register part 2</h1><a [routerLink]="['']">Logaut</a> 
+<br>
 CV:<input type="file" value="CV"  id="" (change)="onFileSelected($event)"><br><br>
 Sta zelite da predajete (multiple choice)
 <br><br>
 <div>
+    <ng-container *ngFor="let a of sviPredmeti" >
+        <input type="checkbox" id="{{a[0].name}}" [(ngModel)]="a[1]" value="{{a[0].name}}">
+        <label for="{{a[0].name}}">{{a[0].name}}</label><br>
+    </ng-container>
 <input type="checkbox" id="matematika" [(ngModel)]="matematika" value="Matematika">
 <label for="matematika">Matematika</label><br>
 
@@ -66,3 +71,4 @@ Za koji uzrast biste predavali izabrane predmete? (multiple choice) <br><br>
 <br>
 <textarea name="" placeholder="Gde ste culi za nas?" [(ngModel)]="tekst" id="" cols="30" rows="10"></textarea><br>
 <button (click)="klik()">click</button>
+</div>   

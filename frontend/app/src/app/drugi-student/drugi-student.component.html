@@ -1,0 +1,81 @@
+
+<div style="text-align: center;"><h1>    Dobrodosli </h1><br><a [routerLink]="['']">Logaut</a></div>    
+<br>
+<div style="text-align: center;">
+<input type="checkbox" [(ngModel)]="binding">show
+<ng-container *ngIf="binding===true">
+    <table>
+        <tr>
+            <th>Br ucenika</th>
+            <th>Br nastavnika</th>
+            <th>casovi zadnjih 30d</th>
+            <th>casovi zadnjih 7d</th>
+        </tr>
+        <tr>
+            <td>{{bru}}</td>
+            <td>{{brn}}</td>
+            <td>{{brc30}}</td>
+            <td>{{brc7}}</td>
+        </tr>
+    </table>
+    <table >
+        <tr *ngFor="let item of predmeti">
+            <td>{{item}}</td><td>
+    <ng-container  *ngFor="let a of nastavnici"><ng-container *ngIf="a.wantedSubjects==item">{{a.firstName}} {{a.lastName}},
+    </ng-container></ng-container>
+    </td>
+    </tr>
+    </table>
+<table style="padding: 5px;"><tr><th><button (click)="search()">po imenu</button></th><th><button (click)="search1()">po prezimenu</button></th><th><button (click)="search2()">po predmetu</button></th></tr>
+<tr *ngFor="let a of nastavnici"><td>{{a.firstName}}</td> <td> {{a.lastName}} </td><td>{{a.wantedSubjects}}</td></tr>
+</table>
+
+<input type="text" name="" [(ngModel)]="ime" id="" placeholder="ime nastavnika"><br>
+<input type="text" name="" [(ngModel)]="prezime"id="" placeholder="prezime nastavnika"><br>
+<input type="text" name="" [(ngModel)]="predmet" id="" placeholder="predmet"><br>
+<button (click)="pretraga()">pretrazi</button>
+<table>
+<tr *ngFor="let a of pretrazeno"><td><div>{{a.firstName}} <br> <button (click)="nastavnik(a)">pregled</button></div></td> <td> {{a.lastName}} </td><td>{{a.wantedSubjects}}</td><td>{{a.ocena}}</td></tr>
+
+</table>
+</ng-container>
+<hr>
+<br>
+Pregled svih zahteva
+<br>
+<table>
+    <tr *ngFor="let a of casovi">
+        <ng-container>        
+        <td>{{a.teacher.firstName}}</td>
+        <td>{{a.teacher.lastName}}</td>
+        <td>{{a.datetime}}</td>
+        <td>{{a.subject}}</td>
+        <td> {{a.end}}</td>
+        <td>{{a.opis}}</td>
+        <td>{{a.status}}</td>
+       
+    </ng-container>
+
+    </tr>
+</table>
+
+
+<br>
+Pregled casova u sledeca 3 dana
+<br>
+<table style="border: 1px solid black;">
+    <tr *ngFor="let a of gotoviCasovi">
+               <td>{{a.teacher.firstName}}</td>
+        <td>{{a.teacher.lastName}}</td>
+        <td>{{a.datetime}}</td>
+        
+        <td> {{a.end}}</td>
+        <td>{{a.opis}}</td>
+        <td>{{a.status}}</td>
+        <input type="range" step="1" min="1" max="5" value='5' onload="this.nextElementSibling.value=this.value" oninput="this.nextElementSibling.value=this.value"><output></output>
+        <!-- <td><button (click)="prihvati(a)">prihvati</button></td>
+        <td><button (click)="odbij(a)">odbij</button></td>
+        <td><input type="text" [(ngModel)]="razlog" name="" id="" placeholder="razlog"></td> -->
+
+    </tr>
+</table></div>

@@ -1,0 +1,43 @@
+
+
+<div style="text-align: center;">
+    <h1>    Dobrodosli </h1><br><a [routerLink]="['']">Logaut</a>  
+
+<!-- <button [routerLink]="['login']">login</button>
+
+<table>
+    <tr>
+        <td>Br ucenika</td>
+        <td>Br nastavnika</td>
+    </tr>
+    <tr>
+        <td>{{bru}}</td>
+        <td>{{brn}}</td>
+    </tr>
+</table>
+<table *ngFor="let item of predmeti"><tr><th>{{item}}</th></tr>
+<tr *ngFor="let a of nastavnici" ><td *ngIf="a.wantedSubjects==item">{{a.firstName}}</td> <td *ngIf="a.wantedSubjects==item"> {{a.lastName}} </td></tr></table> -->
+<!--<tr><th><button (click)="search()">po imenu</button></th><th><button (click)="search1()">po prezimenu</button></th><th>-->
+<table style="padding: 5px;">
+<tr *ngFor="let a of svinastavnici"><td>{{a.firstName}}</td> <td> {{a.lastName}} </td><td>{{a.wantedSubjects}}</td> <td>{{a.wantedClass}}</td><td>{{a.status}}</td><td> <button (click)="cv(a)">CV</button></td><td> <button (click)="Prihvati(a)">Prihvati</button></td> <td><button (click)="Odbij(a)">Odbij</button></td></tr>
+</table>
+<a [href]="slika" alt="" *ngIf="visible">Pregledajte Zeljeni pdf</a><br>
+<!-- <input type="text" name="" [(ngModel)]="ime" id="" placeholder="ime nastavnika"><br>
+<input type="text" name="" [(ngModel)]="prezime"id="" placeholder="prezime nastavnika"><br>
+<input type="text" name="" [(ngModel)]="predmet" id="" placeholder="predmet"><br>
+<button (click)="pretraga()">pretrazi</button>
+<table>
+<tr *ngFor="let a of pretrazeno"><td><div>{{a.firstName}} <br> <button (click)="nastavnik(a)">pregled</button></div></td> <td> {{a.lastName}} </td><td>{{a.wantedSubjects}}</td><td>{{a.ocena}}</td></tr>
+
+</table> -->
+
+<input type="text" [(ngModel)]="binding" name="" id=""><button (click)="dodajPredmet()">dodaj predmet</button>
+<canvasjs-chart [options]="PoPolu" [styles]="{width: '100%', height:'360px'}"></canvasjs-chart>
+<canvasjs-chart [options]="PoPoluNastavnici" [styles]="{width: '100%', height:'360px'}"></canvasjs-chart>
+
+<canvasjs-chart [options]="PoPredmetu" [styles]="{width: '100%', height:'360px'}"></canvasjs-chart>
+<canvasjs-chart [options]="PoRazredu" [styles]="{width: '100%', height:'360px'}"></canvasjs-chart>
+
+<canvasjs-chart [options]="daniUNedelji" [styles]="{width: '100%', height:'360px'}"></canvasjs-chart>
+<canvasjs-chart [options]="chart" [styles]="{width: '100%', height:'360px'}"></canvasjs-chart>
+</div>  

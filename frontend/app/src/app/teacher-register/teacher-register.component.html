@@ -1,4 +1,4 @@
-<p>register works!</p>
+<div style="text-align: center;"><h1>Teacher register</h1>
 <table>
     <tr>
         <td>username:</td>
@@ -16,7 +16,11 @@
         <td>Security question's answer:</td>
         <td><input type="text" name="" id="" [(ngModel)]="formData.securityAnswer" required></td>
     </tr>
-    <tr><input type="radio" name="gender" id="" value="M"  [(ngModel)]="formData.gender" required>Male <input type="radio" name="gender" value="F" id="" [(ngModel)]="formData.gender" required> Female</tr>
+    <tr><td colspan="2">
+        <input type="radio" name="gender" id="" value="M"  [(ngModel)]="formData.gender" required>Male 
+        <input type="radio" name="gender" value="F" id="" [(ngModel)]="formData.gender" required> Female
+    </td>
+    </tr>
     <tr>
         <td>firstname:</td>
         <td><input type="text" [(ngModel)]="formData.firstName" name="" id="" required></td>
@@ -42,7 +46,8 @@
         <td>E-mail:</td>
         <td><input type="text" name="" id="" [(ngModel)]="formData.email" required></td>
     </tr>
-    <tr><button type="submit" (click)="next()">next step</button></tr>
+    <tr><td colspan="2"><button type="submit" (click)="next()">next step</button></td></tr>
 
 
 </table>
+</div>

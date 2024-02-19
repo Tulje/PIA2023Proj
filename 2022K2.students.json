@@ -58,7 +58,7 @@
     "$oid": "65cb9eeccdbf4c0e22f811e8"
   },
   "username": "urke",
-  "password": "urke123",
+  "password": "$2b$04$6NmSxOVldq6rqzRBlmS4EegW/aPFjFssDs1FjZCgKkEhU2PGXaboq",
   "securityQuestion": "Devojacko prezime majke?",
   "securityAnswer": "Erakovic",
   "firstName": "Uros",
@@ -67,8 +67,8 @@
   "address": "Dimitrija Koturovica 25",
   "contactPhone": "065 3586735",
   "email": "tuljenator@gmail.com",
-  "profileImage": "photo_2023-10-13_18-08-06 edit.jpg",
-  "schoolType": "Srednja-Umetnicka",
+  "profileImage": "400026500075_113005.jpg",
+  "schoolType": "Srednja-Strucna",
   "currentGrade": 4,
   "__v": 0
 },
@@ -89,5 +89,43 @@
   "profileImage": "aV2LvEiqPR9Sv5yiE5mMc0WRX2qDVOYMXyIvFr0f.jpg",
   "schoolType": "Gimnazija",
   "currentGrade": 3,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d23dce397289c6e0dfaf8a"
+  },
+  "username": "mika",
+  "password": "$2b$04$Y2Uo7uNni/5YXyOdgWJX/.NtiyqzQOSRGSVAspUfsjyo/eaGmUyI.",
+  "securityQuestion": "mika",
+  "securityAnswer": "mika",
+  "firstName": "mika",
+  "lastName": "mika",
+  "gender": "M",
+  "address": "mika",
+  "contactPhone": "011 1111 1118",
+  "email": "mika",
+  "profileImage": "aV2LvEiqPR9Sv5yiE5mMc0WRX2qDVOYMXyIvFr0f.jpg",
+  "schoolType": "Osnovna",
+  "currentGrade": 7,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d23e29397289c6e0dfaf8c"
+  },
+  "username": "dragana",
+  "password": "$2b$04$/oS/PPosFVYPkhiyoA5/h.aFxKwFXGZ0ugV61wEHcVSEQ32lIVGy.",
+  "securityQuestion": "dragana",
+  "securityAnswer": "dragana",
+  "firstName": "dragana",
+  "lastName": "dragana",
+  "gender": "M",
+  "address": "dragana",
+  "contactPhone": "011 1111 119",
+  "email": "dragana",
+  "profileImage": "aV2LvEiqPR9Sv5yiE5mMc0WRX2qDVOYMXyIvFr0f.jpg",
+  "schoolType": "Osnovna",
+  "currentGrade": 1,
   "__v": 0
 }]

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FileUploadService } from '../file-upload.service';
 import { UserService } from '../user.service';
 import { User } from '../models/User.model';
@@ -8,7 +8,7 @@ import { User } from '../models/User.model';
   templateUrl: './cvpage.component.html',
   styleUrls: ['./cvpage.component.css']
 })
-export class CVpageComponent {
+export class CVpageComponent implements OnInit {
   fileName: string
   matematika: boolean;
   fizika: boolean;
@@ -31,7 +31,16 @@ export class CVpageComponent {
   ss: boolean;
   drugi: string;
   tekst: string;
+  sviPredmeti=[]
   constructor(private fileUploadService: FileUploadService, private servis:UserService) { }
+  ngOnInit(): void {
+    this.servis.sviPredmeti().subscribe(data=>{
+      data.forEach(element => {
+        let a=false
+        this.sviPredmeti.push([element,a])
+      });
+    })
+  }
   onFileSelected(event: any): void {
     const file: File = event.target.files[0];
 
@@ -119,6 +128,11 @@ export class CVpageComponent {
     if (this.svet) {
       selectedSubjects.push("Svet oko nas");
     }
+    this.sviPredmeti.forEach(data=>{
+      if(data[1]==true){
+        selectedSubjects.push(data[0].name)
+      }
+    })
     let a = localStorage.getItem('poluinfo')
     let b:User=JSON.parse(a)
     alert(b.password)

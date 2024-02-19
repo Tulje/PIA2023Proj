@@ -1,0 +1,476 @@
+[{
+  "_id": {
+    "$oid": "65d0bfac3164d71a6b41b904"
+  },
+  "double": true,
+  "user": {
+    "_id": "65cb9eeccdbf4c0e22f811e8",
+    "username": "urke",
+    "password": "$2b$04$tj.R9NvDVZhPOqTef/UB0.osdYydTH6GEGZlskRSfL6xDm.QI.JDe",
+    "securityQuestion": "Devojacko prezime majke?",
+    "securityAnswer": "Erakovic",
+    "firstName": "Uros",
+    "lastName": "Milenkovic",
+    "gender": "M",
+    "address": "Dimitrija Koturovica 25",
+    "contactPhone": "065 3586735",
+    "email": "tuljenator@gmail.com",
+    "profileImage": "400026500075_113005.jpg",
+    "schoolType": "Srednja-Strucna",
+    "currentGrade": 4,
+    "__v": 0
+  },
+  "teacher": {
+    "_id": "65ce44437489a75e115dbfd8",
+    "username": "mare",
+    "password": "$2b$04$6E8YQG8t9FN3xgWt1C8TU.Py63NNuaPJ08IJZGAQNAx3MUWuBcfpq",
+    "securityQuestion": "mare",
+    "securityAnswer": "mare",
+    "firstName": "mare",
+    "lastName": "mare",
+    "gender": "M",
+    "address": "mare",
+    "contactPhone": "011 1111 113",
+    "email": "mare@mare.mare",
+    "profileImage": "IOAP4.png",
+    "wantedSubjects": [
+      "Hemija",
+      "Nemački jezik",
+      "Biologija",
+      "Svet oko nas"
+    ],
+    "wantedClass": [
+      "Srednja Skola",
+      "Osnovna Skola 1-4",
+      "Osnovna Skola 5-8"
+    ],
+    "freeText": "nisam",
+    "CV": "UROS CV.pdf",
+    "status": 1,
+    "__v": 0
+  },
+  "datetime": {
+    "$date": "2023-02-20T12:00:00.000Z"
+  },
+  "end": {
+    "$date": "2023-02-20T14:00:00.000Z"
+  },
+  "status": "Prihvacen",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d0cedd3164d71a6b41b908"
+  },
+  "double": true,
+  "user": {
+    "_id": "65cb9eeccdbf4c0e22f811e8",
+    "username": "urke",
+    "password": "$2b$04$tj.R9NvDVZhPOqTef/UB0.osdYydTH6GEGZlskRSfL6xDm.QI.JDe",
+    "securityQuestion": "Devojacko prezime majke?",
+    "securityAnswer": "Erakovic",
+    "firstName": "Uros",
+    "lastName": "Milenkovic",
+    "gender": "M",
+    "address": "Dimitrija Koturovica 25",
+    "contactPhone": "065 3586735",
+    "email": "tuljenator@gmail.com",
+    "profileImage": "400026500075_113005.jpg",
+    "schoolType": "Srednja-Strucna",
+    "currentGrade": 4,
+    "__v": 0
+  },
+  "teacher": {
+    "_id": "65ce44437489a75e115dbfd8",
+    "username": "mare",
+    "password": "$2b$04$6E8YQG8t9FN3xgWt1C8TU.Py63NNuaPJ08IJZGAQNAx3MUWuBcfpq",
+    "securityQuestion": "mare",
+    "securityAnswer": "mare",
+    "firstName": "mare",
+    "lastName": "mare",
+    "gender": "M",
+    "address": "mare",
+    "contactPhone": "011 1111 113",
+    "email": "mare@mare.mare",
+    "profileImage": "IOAP4.png",
+    "wantedSubjects": [
+      "Hemija",
+      "Nemački jezik",
+      "Biologija",
+      "Svet oko nas"
+    ],
+    "wantedClass": [
+      "Srednja Skola",
+      "Osnovna Skola 1-4",
+      "Osnovna Skola 5-8"
+    ],
+    "freeText": "nisam",
+    "CV": "UROS CV.pdf",
+    "status": 1,
+    "__v": 0
+  },
+  "datetime": {
+    "$date": "2024-02-20T14:30:00.000Z"
+  },
+  "end": {
+    "$date": "2024-02-20T16:30:00.000Z"
+  },
+  "status": "Prihvacen",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d129ea65bff277a40b4dc2"
+  },
+  "double": true,
+  "user": {
+    "_id": "65cb9eeccdbf4c0e22f811e8",
+    "username": "urke",
+    "password": "$2b$04$tj.R9NvDVZhPOqTef/UB0.osdYydTH6GEGZlskRSfL6xDm.QI.JDe",
+    "securityQuestion": "Devojacko prezime majke?",
+    "securityAnswer": "Erakovic",
+    "firstName": "Uros",
+    "lastName": "Milenkovic",
+    "gender": "M",
+    "address": "Dimitrija Koturovica 25",
+    "contactPhone": "065 3586735",
+    "email": "tuljenator@gmail.com",
+    "profileImage": "400026500075_113005.jpg",
+    "schoolType": "Srednja-Strucna",
+    "currentGrade": 4,
+    "__v": 0
+  },
+  "teacher": {
+    "_id": "65ce4f4a7489a75e115dc04b",
+    "username": "ana",
+    "password": "$2b$04$4EYmrMpTFKZrG/ZEiyeK5.xfC.FJBYf3VcDVjJOOqmU4cqMC8EI5K",
+    "securityQuestion": "ana",
+    "securityAnswer": "ana",
+    "firstName": "ana",
+    "lastName": "ana",
+    "gender": "F",
+    "address": "ana",
+    "contactPhone": "011 1111 115",
+    "email": "ana",
+    "profileImage": "aV2LvEiqPR9Sv5yiE5mMc0WRX2qDVOYMXyIvFr0f.jpg",
+    "wantedSubjects": [
+      "Astronomija",
+      "Matematika",
+      "Fizika",
+      "Hemija",
+      "Informatika",
+      "Programiranje",
+      "Srpski jezik i književnost",
+      "Engleski jezik",
+      "Nemački jezik",
+      "Italijanski jezik",
+      "Francuski jezik",
+      "Španski jezik",
+      "Latinski jezik",
+      "Biologija",
+      "Istorija",
+      "Geografija",
+      "Svet oko nas"
+    ],
+    "wantedClass": [
+      "Srednja Skola",
+      "Osnovna Skola 1-4",
+      "Osnovna Skola 5-8"
+    ],
+    "freeText": "U vestima",
+    "CV": "UROS CV.pdf",
+    "status": 1,
+    "__v": 0
+  },
+  "datetime": {
+    "$date": "2023-12-12T12:00:00.000Z"
+  },
+  "end": {
+    "$date": "2023-12-12T14:00:00.000Z"
+  },
+  "status": "Prihvacen",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d1e80de54cd098abb66efd"
+  },
+  "double": true,
+  "user": {
+    "_id": "65cb9eeccdbf4c0e22f811e8",
+    "username": "urke",
+    "password": "$2b$04$6NmSxOVldq6rqzRBlmS4EegW/aPFjFssDs1FjZCgKkEhU2PGXaboq",
+    "securityQuestion": "Devojacko prezime majke?",
+    "securityAnswer": "Erakovic",
+    "firstName": "Uros",
+    "lastName": "Milenkovic",
+    "gender": "M",
+    "address": "Dimitrija Koturovica 25",
+    "contactPhone": "065 3586735",
+    "email": "tuljenator@gmail.com",
+    "profileImage": "400026500075_113005.jpg",
+    "schoolType": "Srednja-Strucna",
+    "currentGrade": 4,
+    "__v": 0
+  },
+  "teacher": {
+    "_id": "65ce44437489a75e115dbfd8",
+    "username": "mare",
+    "password": "$2b$04$6E8YQG8t9FN3xgWt1C8TU.Py63NNuaPJ08IJZGAQNAx3MUWuBcfpq",
+    "securityQuestion": "mare",
+    "securityAnswer": "mare",
+    "firstName": "mare",
+    "lastName": "mare",
+    "gender": "M",
+    "address": "mare",
+    "contactPhone": "011 1111 113",
+    "email": "mare@mare.mare",
+    "profileImage": "IOAP4.png",
+    "wantedSubjects": [
+      "Hemija",
+      "Nemački jezik",
+      "Biologija",
+      "Svet oko nas",
+      "Astrologija"
+    ],
+    "wantedClass": [
+      "Srednja Skola",
+      "Osnovna Skola 1-4",
+      "Osnovna Skola 5-8"
+    ],
+    "freeText": "nisam",
+    "CV": "UROS CV.pdf",
+    "status": 1,
+    "__v": 0
+  },
+  "datetime": {
+    "$date": "2024-02-19T12:00:00.000Z"
+  },
+  "end": {
+    "$date": "2024-02-19T14:00:00.000Z"
+  },
+  "status": "Prihvacen",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d1ec43f04ff4ad5094c143"
+  },
+  "double": true,
+  "user": {
+    "_id": "65cb9eeccdbf4c0e22f811e8",
+    "username": "urke",
+    "password": "$2b$04$6NmSxOVldq6rqzRBlmS4EegW/aPFjFssDs1FjZCgKkEhU2PGXaboq",
+    "securityQuestion": "Devojacko prezime majke?",
+    "securityAnswer": "Erakovic",
+    "firstName": "Uros",
+    "lastName": "Milenkovic",
+    "gender": "M",
+    "address": "Dimitrija Koturovica 25",
+    "contactPhone": "065 3586735",
+    "email": "tuljenator@gmail.com",
+    "profileImage": "400026500075_113005.jpg",
+    "schoolType": "Srednja-Strucna",
+    "currentGrade": 4,
+    "__v": 0
+  },
+  "teacher": {
+    "_id": "65ce4f4a7489a75e115dc04b",
+    "username": "ana",
+    "password": "$2b$04$4EYmrMpTFKZrG/ZEiyeK5.xfC.FJBYf3VcDVjJOOqmU4cqMC8EI5K",
+    "securityQuestion": "ana",
+    "securityAnswer": "ana",
+    "firstName": "ana",
+    "lastName": "ana",
+    "gender": "F",
+    "address": "ana",
+    "contactPhone": "011 1111 115",
+    "email": "ana",
+    "profileImage": "aV2LvEiqPR9Sv5yiE5mMc0WRX2qDVOYMXyIvFr0f.jpg",
+    "wantedSubjects": [
+      "Astronomija",
+      "Matematika",
+      "Fizika",
+      "Hemija",
+      "Informatika",
+      "Programiranje",
+      "Srpski jezik i književnost",
+      "Engleski jezik",
+      "Nemački jezik",
+      "Italijanski jezik",
+      "Francuski jezik",
+      "Španski jezik",
+      "Latinski jezik",
+      "Biologija",
+      "Istorija",
+      "Geografija",
+      "Svet oko nas"
+    ],
+    "wantedClass": [
+      "Srednja Skola",
+      "Osnovna Skola 1-4",
+      "Osnovna Skola 5-8"
+    ],
+    "freeText": "U vestima",
+    "CV": "UROS CV.pdf",
+    "status": 1,
+    "__v": 0
+  },
+  "datetime": {
+    "$date": "2024-02-19T11:38:00.000Z"
+  },
+  "subject": "Astronomija",
+  "end": {
+    "$date": "2024-02-19T13:38:00.000Z"
+  },
+  "status": "Prihvacen",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d2019e397289c6e0dfae9c"
+  },
+  "double": true,
+  "user": {
+    "_id": "65cb9eeccdbf4c0e22f811e8",
+    "username": "urke",
+    "password": "$2b$04$6NmSxOVldq6rqzRBlmS4EegW/aPFjFssDs1FjZCgKkEhU2PGXaboq",
+    "securityQuestion": "Devojacko prezime majke?",
+    "securityAnswer": "Erakovic",
+    "firstName": "Uros",
+    "lastName": "Milenkovic",
+    "gender": "M",
+    "address": "Dimitrija Koturovica 25",
+    "contactPhone": "065 3586735",
+    "email": "tuljenator@gmail.com",
+    "profileImage": "400026500075_113005.jpg",
+    "schoolType": "Srednja-Strucna",
+    "currentGrade": 4,
+    "__v": 0
+  },
+  "teacher": {
+    "_id": "65ce4f4a7489a75e115dc04b",
+    "username": "ana",
+    "password": "$2b$04$4EYmrMpTFKZrG/ZEiyeK5.xfC.FJBYf3VcDVjJOOqmU4cqMC8EI5K",
+    "securityQuestion": "ana",
+    "securityAnswer": "ana",
+    "firstName": "ana",
+    "lastName": "ana",
+    "gender": "F",
+    "address": "ana",
+    "contactPhone": "011 1111 115",
+    "email": "ana",
+    "profileImage": "aV2LvEiqPR9Sv5yiE5mMc0WRX2qDVOYMXyIvFr0f.jpg",
+    "wantedSubjects": [
+      "Astronomija",
+      "Matematika",
+      "Fizika",
+      "Hemija",
+      "Informatika",
+      "Programiranje",
+      "Srpski jezik i književnost",
+      "Engleski jezik",
+      "Nemački jezik",
+      "Italijanski jezik",
+      "Francuski jezik",
+      "Španski jezik",
+      "Latinski jezik",
+      "Biologija",
+      "Istorija",
+      "Geografija",
+      "Svet oko nas"
+    ],
+    "wantedClass": [
+      "Srednja Skola",
+      "Osnovna Skola 1-4",
+      "Osnovna Skola 5-8"
+    ],
+    "freeText": "U vestima",
+    "CV": "UROS CV.pdf",
+    "status": 1,
+    "__v": 0
+  },
+  "datetime": {
+    "$date": "2024-02-22T14:09:00.000Z"
+  },
+  "subject": "Programiranje",
+  "end": {
+    "$date": "2024-02-22T16:09:00.000Z"
+  },
+  "status": "Prihvacen",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d2393f397289c6e0dfaf06"
+  },
+  "double": true,
+  "user": {
+    "_id": "65cb9eeccdbf4c0e22f811e8",
+    "username": "urke",
+    "password": "$2b$04$6NmSxOVldq6rqzRBlmS4EegW/aPFjFssDs1FjZCgKkEhU2PGXaboq",
+    "securityQuestion": "Devojacko prezime majke?",
+    "securityAnswer": "Erakovic",
+    "firstName": "Uros",
+    "lastName": "Milenkovic",
+    "gender": "M",
+    "address": "Dimitrija Koturovica 25",
+    "contactPhone": "065 3586735",
+    "email": "tuljenator@gmail.com",
+    "profileImage": "400026500075_113005.jpg",
+    "schoolType": "Srednja-Strucna",
+    "currentGrade": 4,
+    "__v": 0
+  },
+  "teacher": {
+    "_id": "65ce4f4a7489a75e115dc04b",
+    "username": "ana",
+    "password": "$2b$04$4EYmrMpTFKZrG/ZEiyeK5.xfC.FJBYf3VcDVjJOOqmU4cqMC8EI5K",
+    "securityQuestion": "ana",
+    "securityAnswer": "ana",
+    "firstName": "ana",
+    "lastName": "ana",
+    "gender": "F",
+    "address": "ana",
+    "contactPhone": "011 1111 115",
+    "email": "ana",
+    "profileImage": "aV2LvEiqPR9Sv5yiE5mMc0WRX2qDVOYMXyIvFr0f.jpg",
+    "wantedSubjects": [
+      "Astronomija",
+      "Matematika",
+      "Fizika",
+      "Hemija",
+      "Informatika",
+      "Programiranje",
+      "Srpski jezik i književnost",
+      "Engleski jezik",
+      "Nemački jezik",
+      "Italijanski jezik",
+      "Francuski jezik",
+      "Španski jezik",
+      "Latinski jezik",
+      "Biologija",
+      "Istorija",
+      "Geografija",
+      "Svet oko nas"
+    ],
+    "wantedClass": [
+      "Srednja Skola",
+      "Osnovna Skola 1-4",
+      "Osnovna Skola 5-8"
+    ],
+    "freeText": "U vestima",
+    "CV": "UROS CV.pdf",
+    "status": 1,
+    "__v": 0
+  },
+  "datetime": {
+    "$date": "2024-02-17T15:00:00.000Z"
+  },
+  "subject": "Biologija",
+  "end": {
+    "$date": "2024-02-17T17:00:00.000Z"
+  },
+  "status": "Prihvacen",
+  "__v": 0
+}]

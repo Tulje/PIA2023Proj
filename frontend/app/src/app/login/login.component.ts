@@ -16,6 +16,9 @@ export class LoginComponent {
   reg(){
     this.ruter.navigate(['register'])
   }
+  zaboravio(){
+    this.ruter.navigate(['Zab'])
+  }
   login(){
     this.servis.login(this.username,this.password).subscribe(response=>{if(response!=null){
       localStorage.setItem('login',JSON.stringify(response))
@@ -25,8 +28,9 @@ export class LoginComponent {
      
       else{
         this.servis.loginTeacher(this.username,this.password).subscribe(response=>{if(response!=null){
-          alert("Greska : ne postoji")
-        }})
+          localStorage.setItem('login',JSON.stringify(response))
+          this.ruter.navigate(['stranicaNastavnika'])
+        }else{ alert("Greska : ne postoji")}})
       }
     })
     

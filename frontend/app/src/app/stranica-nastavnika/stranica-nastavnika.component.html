@@ -1,0 +1,97 @@
+<div style="text-align: center;"><h1>Teacher</h1><br><a [routerLink]="['']">Logaut</a>   <br><br>
+
+<label for="firstName">First Name:</label>
+<input type="text" id="firstName" [(ngModel)]="nastavnik.firstName">
+<br>
+
+<label for="lastName">Last Name:</label>
+<input type="text" id="lastName" [(ngModel)]="nastavnik.lastName">
+<br>
+
+
+
+<label for="address">Address:</label>
+<input type="text" id="address" [(ngModel)]="nastavnik.address">
+<br>
+
+<label for="contactPhone">Contact Phone:</label>
+<input type="text" id="contactPhone" [(ngModel)]="nastavnik.contactPhone">
+<br>
+
+<label for="email">Email:</label>
+<input type="email" id="email" [(ngModel)]="nastavnik.email">
+<br>
+
+<label for="profileImage">Profile Image:</label><br>
+<img [src]="slika" width="300px" height="300px"><br>
+<input type="file" id="profileImage" (change)="onFileSelected($event)">
+<br>
+
+<label for="wantedSubjects">Wanted Subjects:</label>
+<input type="text" id="wantedSubjects" [(ngModel)]="nastavnik.wantedSubjects">
+<br>
+
+<label for="wantedClass">Wanted Class:</label>
+<input type="text" id="wantedClass" [(ngModel)]="nastavnik.wantedClass">
+<br>
+<button (click)="azuriraj()"> azuriraj</button>
+
+
+<!-- <label for="CV">CV:</label>
+<input type="file" id="CV" (change)="onFileSelected($event)">
+<br> -->
+<hr>
+<br>
+Pregled pristiglih zahteva
+<br>
+<table>
+    <tr *ngFor="let a of casovi">
+        <ng-container *ngIf="a.status=='neodobren'" >        <td>{{a.user.firstName}}</td>
+        <td>{{a.user.lastName}}</td>
+        <td>{{a.datetime}}</td>
+        
+        <td> {{a.end}}</td>
+        <td>{{a.opis}}</td>
+        <td>{{a.status}}</td>
+        <td><button (click)="prihvati(a)">prihvati</button></td>
+        <td><button (click)="odbij(a)">odbij</button></td>
+        <td><input type="text" [(ngModel)]="razlog" name="" id="" placeholder="razlog"></td>
+    </ng-container>
+
+    </tr>
+</table>
+<hr>
+<br>
+Dosije Studenata
+<br>
+<table>
+    <tr *ngFor="let a of studenti">
+        <td>{{a[1]}}</td>
+        <td>{{a[2]}}</td>
+        <td><button (click)="pregledaj(a[0])">pregledaj</button></td>
+      
+    
+
+    </tr>
+</table>
+
+
+<br>
+Pregled zavrsenih casova
+<br>
+<table>
+    <tr *ngFor="let a of gotoviCasovi">
+               <td>{{a.user.firstName}}</td>
+        <td>{{a.user.lastName}}</td>
+        <td>{{a.datetime}}</td>
+        
+        <td> {{a.end}}</td>
+        <td>{{a.opis}}</td>
+        <td>{{a.status}}</td>
+        <input type="range" step="1" min="1" max="5" value='5' onload="this.nextElementSibling.value=this.value" oninput="this.nextElementSibling.value=this.value"><output></output>
+        <!-- <td><button (click)="prihvati(a)">prihvati</button></td>
+        <td><button (click)="odbij(a)">odbij</button></td>
+        <td><input type="text" [(ngModel)]="razlog" name="" id="" placeholder="razlog"></td> -->
+
+    </tr>
+</table></div> 

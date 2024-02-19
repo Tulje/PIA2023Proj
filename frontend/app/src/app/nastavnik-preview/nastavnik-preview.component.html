@@ -1,0 +1,69 @@
+<div style="text-align: center;"><h1>Teacher Information</h1><br><a [routerLink]="['']">Logaut</a></div>    
+
+<div style="text-align: center;">
+    
+    
+    
+   
+    
+    <label>First Name:</label>
+    <label>{{ nastavnik.firstName }}</label>
+    <br><br>
+    
+    <label>Last Name:</label>
+    <label>{{ nastavnik.lastName }}</label>
+    <br><br>
+    
+    <label>Gender:</label>
+    <label>{{ nastavnik.gender }}</label>
+    <br><br>
+    
+    <label>Address:</label>
+    <label>{{ nastavnik.address }}</label>
+    <br><br>
+    
+    <label>Contact Phone:</label>
+    <label>{{ nastavnik.contactPhone }}</label>
+    <br><br>
+    
+    <label>Email:</label>
+    <label>{{ nastavnik.email }}</label>
+    <br><br>
+    
+    <img [src]="slika" width="300px">
+    <br><br>
+    
+    <label>Wanted Subjects:</label>
+    <label>{{ nastavnik.wantedSubjects }}</label>
+    <br><br>
+    
+    <label>Wanted Class:</label>
+    <label>{{ nastavnik.wantedClass }}</label>
+    <br><br>
+    
+    <label>Free Text:</label>
+    <label>{{ nastavnik.freeText }}</label>
+    <br><br>
+    
+    <label>CV:</label>
+    <label>{{ nastavnik.CV }}</label>
+    <br><br>
+    
+    <label>Status:</label>
+    <label>{{ nastavnik.status }}</label>
+    <br><br>
+    zakazite cas <br> 
+    <input type="datetime-local" [(ngModel)]="datetime" step="1800"><br>
+    <select name=""  [(ngModel)]="IzabranPredmet"  id="" *ngIf="nastavnik.wantedSubjects.length!=1">
+        <option  *ngFor="let a of nastavnik.wantedSubjects" value={{a}}>{{a}}
+        </option>
+    </select><br>
+    <select name="" [(ngModel)]="IzabranPredmet" id="" *ngIf="nastavnik.wantedSubjects.length==1" disabled>
+        <option  *ngFor="let a of nastavnik.wantedSubjects" value={{a}}>{{a}}
+        </option>
+    </select><br><br>
+    <textarea name="" [(ngModel)]="opis" id="" cols="30" rows="10" placeholder="kratak opis zahteva"></textarea><br>
+    <input type="checkbox" [(ngModel)]="dupli" name="" id="">dupli cas?
+    <button (click)="nesto()"> nesto</button>
+  </div>
+  

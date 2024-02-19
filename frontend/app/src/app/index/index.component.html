@@ -1,25 +1,38 @@
-<p>index works!</p>
+<body style="text-align: center;">
+    
+
 <h1>    Dobrodosli </h1>
 
-<button [routerLink]="['login']">login</button>
+<button [routerLink]="['login']">login</button><br>
+<input type="checkbox" [(ngModel)]="binding" name="show" id="">show <br>
 
 <table>
     <tr>
-        <td>Br ucenika</td>
-        <td>Br nastavnika</td>
+        <th>Br ucenika</th>
+        <th>Br nastavnika</th>
+        <th>casovi zadnjih 30d</th>
+        <th>casovi zadnjih 7d</th>
     </tr>
     <tr>
         <td>{{bru}}</td>
         <td>{{brn}}</td>
+        <td>{{brc30}}</td>
+        <td>{{brc7}}</td>
     </tr>
 </table>
-<table *ngFor="let item of predmeti"><tr><th>{{item}}</th></tr>
-<tr *ngFor="let a of nastavnici" ><td *ngIf="a.wantedSubjects==item">{{a.firstName}}</td> <td *ngIf="a.wantedSubjects==item"> {{a.lastName}} </td></tr></table>
-
+<ng-container *ngIf="binding" >
+<table >
+    <tr *ngFor="let item of predmeti">
+        <td>{{item}}</td><td>
+<ng-container  *ngFor="let a of nastavnici"><ng-container *ngIf="a.wantedSubjects==item">{{a.firstName}} {{a.lastName}},
+</ng-container></ng-container>
+</td>
+</tr>
+</table>
 <table style="padding: 5px;"><tr><th><button (click)="search()">po imenu</button></th><th><button (click)="search1()">po prezimenu</button></th><th><button (click)="search2()">po predmetu</button></th></tr>
 <tr *ngFor="let a of nastavnici"><td>{{a.firstName}}</td> <td> {{a.lastName}} </td><td>{{a.wantedSubjects}}</td></tr>
 </table>
-
+</ng-container>
 <input type="text" name="" [(ngModel)]="ime" id="" placeholder="ime nastavnika"><br>
 <input type="text" name="" [(ngModel)]="prezime"id="" placeholder="prezime nastavnika"><br>
 <input type="text" name="" [(ngModel)]="predmet" id="" placeholder="predmet"><br>
@@ -28,3 +41,4 @@
 <tr *ngFor="let a of pretrazeno"><td>{{a.firstName}}</td> <td> {{a.lastName}} </td><td>{{a.wantedSubjects}}</td></tr>
 
 </table>
+</body>

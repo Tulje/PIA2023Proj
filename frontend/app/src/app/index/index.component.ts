@@ -9,6 +9,8 @@ import { UserService } from '../user.service';
 export class IndexComponent implements OnInit{
   brn:number=0
   bru:number=0
+  brc7:number=0
+  brc30:number=0
   ime:string
   prezime:string
   predmet:string
@@ -19,16 +21,43 @@ export class IndexComponent implements OnInit{
   sort2:number=1
   pretrazeno:any[]=[]
   predmeti:any[]=[]
+  binding:boolean=true
+  svinastavinici=[]
   constructor(private servis:UserService){}
   ngOnInit(): void {
-    this.servis.teachers().subscribe(data=>{this.brn=data.length,
-    data.forEach(element => {
+    this.servis.teachers().subscribe(data=>{
+    data.forEach(element => {if(element.status==1){this.brn++,this.svinastavinici.push(element)
       element.wantedSubjects.forEach(element1 => {
         if(!this.predmeti.includes(element1)){this.predmeti.push(element1)}
         let a={firstName:element.firstName,lastName:element.lastName,wantedSubjects:element1} 
         this.nastavnici.push(a)
       });
-    });
+    }})
+    let datum7=new Date()
+    let datum30= new Date()
+    datum7.setDate(datum7.getDate()-7)
+   // alert(datum7.getDate())
+    datum30.setDate(datum7.getDate()-30)
+   // alert(datum30)
+    this.servis.sviCasovi().subscribe(data=>
+      { 
+        data.forEach(data=>{
+        let novidejt=new Date(data.datetime)
+        let danas= new Date()
+        //alert(danas.getTime())
+        //alert(novidejt.getTime())
+        let razlika= danas.getTime()-novidejt.getTime()
+
+        let razlikaDana=razlika/(1000*3600*24)
+      //  alert(razlika)
+        if(razlikaDana<30 &&razlikaDana>=0){
+          this.brc30++
+        }
+        if(razlikaDana<7 && razlikaDana>=0){
+          this.brc7++
+        }
+      })
+      })
     })
     this.servis.students().subscribe(data=>{this.bru=data.length,this.studenti=data})
 

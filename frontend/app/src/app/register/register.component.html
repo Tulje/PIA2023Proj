@@ -1,4 +1,4 @@
-<p>register works!</p>
+<div style="text-align: center;">
 <button (click)="teacher()">You want to be a teacher?</button>
 <table>
     <tr>
@@ -17,7 +17,7 @@
         <td>Security question's answer:</td>
         <td><input type="text" name="" id="" [(ngModel)]="formData.securityAnswer" required></td>
     </tr>
-    <tr><input type="radio" name="gender" id="" value="M"  [(ngModel)]="formData.gender" required>Male <input type="radio" name="gender" value="F" id="" [(ngModel)]="formData.gender" required> Female</tr>
+    <tr><td colspan="2"><input type="radio" name="gender" id="" value="M"  [(ngModel)]="formData.gender" required>Male <input type="radio" name="gender" value="F" id="" [(ngModel)]="formData.gender" required> Female</td></tr>
     <tr>
         <td>firstname:</td>
         <td><input type="text" [(ngModel)]="formData.firstName" name="" id="" required></td>
@@ -63,5 +63,6 @@
             </select>
         </td>
     </tr>
-    <tr><button (click)="reg()">register</button></tr>
+    <tr><td colspan="2"><button (click)="reg()">register</button></td></tr>
 </table>
+</div>

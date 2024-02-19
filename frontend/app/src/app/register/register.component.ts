@@ -46,7 +46,13 @@ export class RegisterComponent implements OnInit{
       const file:File = event.target.files[0];
 
       if (file) {
-
+          // let img = new Image()
+          // let object=URL.createObjectURL(file)
+          // img.onload =function(){
+          //   alert(img.width+ " "+ img.height)
+          //   URL.revokeObjectURL(object)
+          // }
+          // img.src=object
           this.fileName = file.name;
           this.formData.profileImage=file.name
           const formData = new FormData();
@@ -106,6 +112,7 @@ export class RegisterComponent implements OnInit{
         });
     
         alert('All fields are not empty');
+        this.ruter.navigate([''])
       } else {
         alert('Some fields are empty');
       }
